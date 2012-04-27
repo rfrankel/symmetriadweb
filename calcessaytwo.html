@@ -1,0 +1,795 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+     Theme: inspired by The Eames (http://theeamestheme.tumblr.com/)
+     Design & Production: The Minimalist (http://minimalist.co)
+     with assistance by BT (http://bensontrade.nl)
+     Radically modified by Rebecca Frankel
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <link href='http://fonts.googleapis.com/css?family=Gentium+Basic:700,400italic' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+	
+     <title>Calculus, the End of the Road</title>	
+     <meta name="description" content="Description" />
+     <link rel="shortcut icon" href="http://assets.tumblr.com/images/default_avatar_16.gif" />
+     <link rel="alternate" type="application/rss+xml" title="Untitled" href="http://demo.tumblr.com/rss" />
+
+<!-- Styles -->
+
+<style type="text/css">
+/*----- RESET -------*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+
+/*----- GENERAL -----*/
+
+     header, footer, section, article, nav, aside {
+        display: block;
+     }
+
+     body {
+        background: #fff url(greenishbg.jpg) repeat 0 0;
+        color: darkgreen;
+        font: 'Gentium Book Basic', 16px/20px Georgia, "Times New Roman", Times, serif;
+        padding-top: 35px;
+        text-align: center;
+        width:580px;
+        margin: 0 auto;
+        font-size:100%;
+        line-height:1.25em;
+     }
+
+     h1, h2, h3, hQ {
+        font-family:'Gentium Basic', Georgia, "Times New Roman", Times, serif;
+     }
+
+     h1 {
+        font: 'Gentium Basic';
+        font-size: 60px;
+        letter-spacing: -2px;
+        line-height: 50px;
+     }
+
+     h2 {
+        margin-top: 1px;
+        font-size: 35px;
+        line-height: 28px; 
+        letter-spacing: -1px;
+     }
+
+     h3 {
+        font-size: 21px;
+        line-height: 27px; 
+     }
+
+     a:link, a:visited {
+        color: green;
+        font-weight: normal;
+        text-decoration: none;
+     }
+     
+     a:hover, a:active {
+        text-decoration: underline;
+     }
+
+     hr{
+        border:0 #ccc solid;
+        border-top-width:1px;
+        clear:both;
+        height:0;
+     }
+
+     ol{list-style:decimal}
+
+     ul{list-style:disc}
+
+     li{margin-left:30px}
+
+     p,dl,hr,h1,h2,h3,h4,h5,ol,ul,pre,table,address,fieldset{margin-bottom:15px}
+
+     #main {
+        padding: 0;
+     }
+
+     #mainDesc {
+        padding-top: 10px;
+     }
+
+/*----- MASTHEAD -----*/
+
+     .noMeta > div {
+        padding: 0px;
+     }
+
+     #masthead {
+        margin: 0 0 0 0;
+     }
+
+     #masthead h1 {
+        margin-bottom: 0;
+     }
+
+     #masthead h1 a:link, #masthead h1 a:visited {
+        text-transform: none;
+        color: green;
+        text-decoration: none;
+     }
+
+     #masthead h1 a:active {
+        outline: 0;
+     }
+
+     #masthead p {
+        font-family: Georgia, serif;
+        font-size: 20px;
+        color: darkgreen;
+        margin-bottom: 0;
+     }
+
+     #masthead a:link, #masthead a:visited {
+        color: green;
+     }
+
+     #siteDescription{
+        font-size: 13px;
+        color: darkgreen;
+        /*max-width: 320px;*/
+        /*text-transform: Uppercase;*/
+        /* color of border was #ccc */
+        border-top: 2px solid green;
+        /*border-bottom: 2px solid green;*/
+        margin-top: 0px;
+        padding: 18px 0 18px 0;
+        font-family: "Times New Roman", Times, serif;
+     }
+
+/*----- ARTICLE META INFO -----*/
+
+     #designline {
+        margin-top: 36px;
+     }
+
+     h5{
+        position: relative;
+        top: -37px;
+        padding: 0 0 1px 0;
+        margin: 0 0 0 0;
+        font-family: Georgia, serif;
+        font-size: 10px;
+        color: darkgreen;
+        text-decoration: none;
+        font-weight: normal;
+        border-top: 1px dashed #ccc;
+     }
+
+     h5 a:link, .line a:visited{
+        font-family: Georgia, serif;
+        font-size: 10px;
+        color: darkgreen;
+        text-decoration: none;
+        font-weight: normal;
+     }
+
+     h5 a:hover{
+        text-decoration: underline;
+     }
+
+     h5 abbr{
+        display: inline-block;
+        position: relative;
+        margin: 0 auto;
+        padding: 0 28px;
+        top: 18px;
+     }
+
+     h5.postDate a{
+        color: darkgreen;
+     }
+
+/*------------ numbers --------*/
+
+.number { 
+float: left; 
+color: darkgreen; 
+font-size: 36px; 
+line-height: 30px; 
+padding-top: 4px; 
+padding-right: 8px; 
+padding-left: 3px; 
+font-family: 'Gentium Basic', Georgia; 
+}
+
+
+/*----- ARTICLE -----*/
+
+     article {
+        padding-bottom: 8px;
+        text-align: left;
+        position: relative;
+        margin-top: -8px;
+      }
+
+     article img {
+        border: none;
+        max-width: 500px;
+        display: block;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     articleBody p img {
+        border: none;
+        display: block !important;
+        margin-bottom: 15px !important;
+        max-width: 500px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+     }
+
+     article > div {
+        padding: 0 0 1px;
+        overflow: hidden;
+     }
+     article .searchPage {
+        border-top: 1px dashed #ccc;
+        padding-top: 29px;
+        margin: 6px 0 0 0;
+     }
+
+     .searchPageText {
+        margin: 0 0 25px 0;
+     }
+
+     article .meta a:link, article .meta a:visited {
+        text-decoration: none;
+     }
+
+     article .meta a:hover, article .meta a:active {
+        text-decoration: underline;
+     }
+
+     article h2 {
+        text-align: center;
+        color: #222222;
+     }
+
+     article h2 a:link, article h2 a:visited {
+        color: #222;
+        text-decoration: none;
+     }
+
+     article h2 a:hover, article h2 a:active {
+        text-decoration: none;
+        border-bottom: 1px solid #222;
+     }
+
+     blockquote {
+        border-left: 1px solid #ddd;
+        margin-left: 20px;
+        padding-left: 1em;
+     }
+
+     #quoteSource{
+        margin-top: -5px;
+        margin-left: auto;
+        margin-left: right;
+        text-align: center;
+     }
+
+     #quoteText h2 {
+        text-align: center;
+         color: #222222;
+     }
+
+     article .chat {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 15px;
+     }
+
+     article .chat li {
+        margin: 0 0 2px;
+        padding: 2px 0 2px 0;
+     }
+
+     .chatname {
+        font: 12px/12px "Times New Roman", Times, serif;
+        text-transform: Uppercase;
+        font-weight: normal;
+     }
+
+     .photoCaption {
+        text-align: right;
+        /*width: 320px;*/
+        margin: 0 auto;
+     }
+
+     .photoCaption blockquote {
+        text-align: left;
+        border-left: 1px solid #ddd;
+        margin-left: 0px;
+        padding-left: 18px;
+     }
+
+
+
+
+ 
+</style>
+
+<!-- Scripts -->
+
+<!--[if IE]>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+
+<meta http-equiv="x-dns-prefetch-control" content="off"/></head>
+
+<body>
+     <header id="masthead" class="clearfix">
+        <div id="thehead">       
+           <div id="navMasthead">
+              <h1><a href="#" title="/">Calculus</a></h1>
+              <h3> another way? <h3>
+           </div>
+        </div>
+     </header>
+
+     <section id="mainDesc" class="clearfix">
+        
+           <div id="siteDescription">PART TWO <br>(continued from <a href="calcessay.html">PART ONE</a>)</div>
+         
+     </section>
+
+     <div id="designline">
+        <h5 class="postDate">
+           <abbr>
+           </abbr>
+        </h5>
+     </div>
+
+
+     <section id="main" class="clearfix">
+     <div class="layout">           
+     
+      
+           
+
+
+
+     <article>
+        <div>
+           
+          
+           
+          
+           
+          
+           
+<!---              <div id="quoteText"> 
+     <div id="designline">
+ <h5 class="postDate">Calculus is the last math class children take or the first math class they don't take.</h5>
+     </div> 
+             
+
+        </div>
+     </article>
+
+     <article>
+        <div>
+           
+          
+           
+              <a href="#" title="http://www.giftsforageek.com/product/calculus_cap_150146484"><img src="calculus_cap.png" alt="Calculus cap by &nbsp;Gifts for a Geek" /></a>
+    
+ <div id="designline">
+        <h5 class="postDate">
+           <abbr>
+Calculus Cap by <a href="#" title="http://www.giftsforageek.com/">Gifts for a Geek</a>
+           </abbr>
+        </h5>
+     </div>
+
+              <div class="photoCaption"><p>
+           
+      
+        </div> --->
+     </article>
+
+
+     <article>
+        <div>
+           
+               
+              
+              <div><p>
+<span class="number">So where is</span> the big magic and mystery of calculus? I submit that in
+the fundamental equation F=ma the difficult variable is the "a." Forces
+are related to a mysterious and abstract idea of acceleration. What
+exactly is an acceleration?
+</p><p>
+ The standard story is "a first derivative is a rate of change and a
+second derivative is a rate of change of a rate of change." This is
+not the right way to think about it in general: this story only works
+well in one dimension, and it only works because of an accident of the
+one dimensional case. This is one of the reasons calculus seems much
+harder than it needs to be, because one must spend great effort
+learning one story, and then a similar amount of effort learning that
+it is wrong. If one masters the one dimensional case, the next step is
+to embark on another a different, difficult subject, "multivariate
+calculus" --- and one discovers, not to put too fine a point on it,
+that multivariate calculus basically doesn't work at all. The idea of
+"a rate of change of a rate of change" just doesn't generalize ---
+instead it dissolves into a disastrous mess of partial derivatives. To
+clean up the mess, there is yet another subject to tackle:
+differential geometry. This also comes in multiple different
+historical flavors, another mess the student is made to wade
+through. Finally there is the "advanced" version that physicists use,
+filled with fancily named objects: groups, fiber bundles, dizzily high
+dimensional spaces, and truly frightening abstraction. Only a
+vanishingly small number of students ever make it that far.
+</p><p>
+I was quite annoyed to realize, after burning six years of my life
+wading through all this stuff, that it basically added to what I
+learned in introductory calculus only one simple --- but tremendously
+powerful --- idea.  I shouldn't say "added": the more accurate word is
+"corrected."  The problem is that the idea of a "rate of change of a
+rate of change" leaves something important out. Suppose we think of 
+a "rate of change" as a little vector, representing the velocity of a
+moving particle. Now ask the question: how can that "unit of change"
+itself change? In one dimension, it has limited options: it can get
+faster or slower. But in three dimensions, it has more possibilities.
+Not only can it get faster or slower, it can also rotate --- like an
+airplane, we can think of it having three more degrees of freedom:
+pitch, yaw and roll. 
+</p><p>
+The key point here is that the "space of changes" of our little "unit
+of change" is in itself a new space, which, notably, might not even be
+the same dimension as the original space, nor is it even necessarily
+flat. It happens in one dimension that the "space of changes" of a
+vector constrained to a line has the same dimension and shape as the
+line itself. But that is merely an accident of one dimension, and an
+unfortunate one, because it allows the narrative to silently sweep
+this "space of changes" under the rug.
+</p><p>
+ The principal contribution the modern mathematician's conception
+makes to this subject matter is one single powerful idea: the
+observation that it is useful to become conscious of a space of
+changes --- to give a name to both a tranformation and to the space of
+all possible transformations. In other words, if we are observing an
+airplane that has, at a certain moment, say, tacked to the left with a
+certain pitch, yaw and roll parameter, it is useful not just to
+see this action as a transformation of the airplane's state, but to
+look at the action as an object in itself, with its own name, that has
+a location of its own in a space of all possible related actions. That
+is to say, we want to talk precisely about the "change of the change"
+and think consciously about the space in which these second level
+changes are objects rather than transformations. In other words, we
+want verbs to turn into nouns, transitions to turn into objects, so
+that the evanescent moment of "something changing" can become
+something concrete we can look at, stand back from, manipulate, and
+measure in relation to other similar objects. If we can do that, we
+can use this consciousness to cut the Gordian knot of partial
+derivatives which blights the teaching of calculus and differential
+geometry.
+</p><p>
+Why is it so important to become conscious of this space? Well, let us
+return to the question "what is an acceleration, really?" The standard
+story makes it out to be "the same kind of thing" as a first
+derivative -- that is to say, a double application of the "rate of
+change" operator. But this story breaks down in multivariate calculus,
+when it becomes clear that ordinary derivatives and partial derivates
+cannot be doubly-applied to capture the idea of an acceleration in
+general. Is there any operation you can doubly-apply to get an
+acceleration object in every case?
+</p><p>
+Yes there is, but you have to think carefully about what you are
+trying to do. I submit that the right way to tell the story about the
+operation that is performed (twice!) is this: we want to make the
+problem of understanding motion in the world tractable by observing
+that it helps to approximate a complex, curved world with a linear
+space. For example, even though you know the earth is round, you
+follow a flat road atlas without fear it will mislead you. If you were
+flying a plane from here to China, you might have to correct the route
+a flat map would suggest to you, but for most of us, who aren't
+traveling that far from home, a flat road atlas is a perfectly good
+approximation. That is how you should think about the operation one is
+doing when one takes a derivative: it is approximating a complex
+surface with a flat tangent space in order to make route understanding
+and planning easier.
+</p><p>
+But wait! you might ask: I'm not so naive as to think the earth is
+flat!  That belief went out of style millennia ago. Perhaps it makes
+for a useful local approximation, but what do I do when I travel
+beyond my local area? People do, after all, fly to China, and they do
+expect to arrive in the right place. If the pilot arrived in Thailand
+rather than Shanghai because he flew a straight line on a map,
+forgetting to correct for the curvature of the earth, the passengers
+would be quite annoyed indeed. We expect our mathematics to 
+handle routes that venture out of the range of a local flat
+approximation; we expect it to tell us what a "straight line on a 
+sphere" really means 
+</p><p>
+Notice that if a pilot is following a "straight line on a sphere," he
+is not really flying the plane straight. He will be constantly turning
+it a little bit. In reality, he is probably applying small corrections
+periodically, but in our mathematical fantasy world we imagine that
+he is in every tiniest instant of time applying the tiniest possible
+correction, in exactly the amount necessary to keep him on course. 
+</p><p>
+What kind of thing is this tiny course correction? In particular, how
+can we understand it as result of a "double application" of some
+operator, so as to understand the essence of the meaning of "rate of
+change of the rate of change"? This question gets to the mystery of
+the nature of acceleration. In order to stay on the route to Shanghai
+in our mathematical fantasy world, our pilot has to apply an
+"acceleration" --- in the mathematical sense  --- to the plane at
+every moment. What kind of object is this "acceleration"?
+</p><p>
+I was setting up for this question when I emphasized how useful it is
+to think of "the change of a change" --- i.e. in this case, a pitch,
+roll or yaw of the plane  --- as an object, and to think of these
+objects all living together in some space, a space which might be
+higher-dimensional and interestingly curved. Now that we are facing
+the problem of understanding our necessary "tiny course correction,"
+let us slow down and consider carefully what we are trying to do. We
+are trying to pick out some object which is related to all the objects
+in the space of all possible pitches, rolls, and yaws the plane can
+do. But it cannot be any particular one of them, because, remember, we
+are living in our mathematical fantasy world where we are not
+correcting periodically, but somehow constantly and
+instantaneously. Where can we find this object we are applying to keep
+our plane on course in this ideal mathematical world?  In particular,
+in what way can we find it by applying some kind of "derivative"
+operator a second time?
+</p><p>
+The key idea is that the operation we need to apply the second time is
+the same operation we applied when we made a flat map of a curved
+earth --- but this time the operation is not being applied in our real
+world, it is being applied in this "pitch, yaw, roll" space. That is
+to say, we want to imagine some being living in this other world, the
+world where all the "changes of changes" are concrete places --- just
+ordinary locations in an ordinary neighborhood --- and we want to
+imagine him doing the same trick we did when we made ourselves a local
+road atlas. He wants to simplify his world by pretending it is flat,
+locally. In particular, the locality he wants to map is the
+neighborhood of all the very small changes, the small movements we can
+make to the airplane, because these are the movements we care about
+when we make the small course corrections that keeps our plane headed
+towards Shanghai rather than Bangkok. He wants to make a flat map of
+this particular neighborhood, and he wants a procedure to find on this
+map the right correction to get him to Shanghai. The magic idea is
+that, just the same way we can use a heading on a map of our real
+space to get us on a course to a certain location, we can use a
+heading on this map in the space of "changes of changes" to get the
+overall change we are seeking. If we want the plane to end up with an
+overall 30 degree rotation, for instance, we can use our local map of
+small changes near the identity rotation to find a heading that will
+get us the right overall change when applied consistently over the
+course of our trip.
+</p><p>
+By the way, if you want to check that this story is, in fact, standard
+(in certain mathematical circles), then I should tell you that the key
+words which are used when these things are normally talked about.  A
+space of (composable, reversible) actions or changes is called a
+group.  One that is continuous, like the changes of velocity of an
+airplane, is called a Lie group, after Sophus Lie, who first studied
+them. The map of "the local neighborhood of smallest changes" is
+called the Lie algebra. There is a standard construction that makes a
+Lie algebra out of any Lie group.  It is a deep and beautiful theorem
+that all the local neighborhoods in a space of changes look alike, so
+one map suffices for every neighborhood, and they stitch together into
+a complete atlas in a canonical way.  As a consequence, it is always
+possible to pick a small local change-of-changes and keep applying it
+continually to grow it into a large change.  This transformation is
+called the "exponential map". The hypersphere, viewed as a Lie group,
+also has a standard name: the Special Unitary group of dimension two,
+or SU2. The space of all "pitches, yaws and rolls" is called the
+Special Orthogonal group of dimension three, or SO3. There is another
+very nice theorem which proves that these two groups can be identified
+if we add in an extra binary choice for "spin" (in the subatomic
+particle sense of the word). To keep this story simple and focused I
+won't talk much about spin, except to say that one of the particularly
+interesting properties of the hypersphere is that it has three
+different mathematical identities: as a unitary group, an orthogonal
+group and a spin group. Four identities, in fact, if you note that it
+is the quaternion group too. A great deal of interesting mathematics
+converges on the hypersphere.
+</p><p>
+  These aren't very pretty names, but they are standard, for what it
+is worth. Wikipedia will tell you all about them, though I think my
+way of telling the story is more fun.
+</p><p>
+So I have answered my question: what is an acceleration? It is a
+heading on a local map of the neighborhood near the identity of the
+space of "changes of changes."  We can understand that acceleration is
+generated by "the same operation" that we previously used to find the
+velocity, by noticing that in both cases we approximated a complex
+curved space with a simpler, local, flat map, and then used that map
+to plot a course. The subtle point, however, is that when we do this
+operation the second time we are doing it in a different space. We are
+not in our own world anymore, we are in the space of "changes of
+changes."  This subtle point is lost in the account of single variable
+calculus because of the pure accident that in that case the space of
+"changes of changes" looks too much like our own space. It just
+happens to be the same dimension, and it just happens to be flat, so
+you can get away with not mentioning it. But I think you lose a
+tremendous amount of real understanding when you make this
+simplification. The result is fruitless confusion for young people
+which soaks up some of the most valuable time in their lives in a
+painful gauntlet of partial derivatives and a frustrating
+archaeological dig through layers of obsolete historical conception and
+notation. I feel strongly that this is deeply unfair -- in this high
+stakes game, kids deserve to hear the complete, correct story from the
+beginning.
+</p><p>
+This, to my eyes, is why the hypersphere is so enormously useful and
+important as a teaching tool. I have a slightly different emphasis
+from most people who talk about the appeal of the four-dimensional
+sphere in teaching: they talk about how it increases awareness of
+higher dimensions, or of symmetry, or of the general idea of a
+polytope. These things are nice, but the thing I really care about is
+that it is the smallest and most relevant non-degenerate example of a
+space of "changes of changes." It is the space where a pitch, roll, or
+yaw becomes a concrete and physical object, and where you can stand
+back and look at the whole collection of all possible combinations of
+pitching, rolling, and yawing (and an extra choice of "spin", which I
+can explain, but won't now) all sitting together in their right
+places, and see how they are naturally arranged. Seeing their
+arrangement is key, because it is a deeply important fact that this
+kind of space is not, in general, flat. (If I just told you that the
+space of all possible pitches, yaws and rolls is not a flat space,
+would that be immediately obvious? I don't think so.) It is the space
+where the idea of "picking a heading" to get to a certain desired
+change makes sense: where a "thirty degree rotation about a given
+axis" is a place it is possible to set your sights on and navigate
+towards. That, in turn, is important because it allows you to
+understand exactly what you are talking about when you say, for
+instance, that applying a force on a spinning string causes the object
+at the end of the string to accelerate in such a way that it will to
+rotate through a thirty degree arc in a certain given time. In this
+way, the hypersphere is a concrete embodiment of the mathematics that is
+necessary to understand the language of physics.
+</p><p>
+I also care abouut the regular polytopes in four dimensional space
+because I am of the strong opinion if one wishes --- in the interest
+of creating a easier more kid-friendly, narrative --- to simplify the
+story, the right simplification to introduce is not to focus on the
+(rather degenerate) one dimensional case, but instead, to introduce
+the discrete analogue to this story. By discrete, by the way, I mean
+discrete in the "space of changes" --- for instance, a world where a
+hypothetical airplane is not allowed to move in arbitrary ways, but
+perhaps is restricted to, say, only multiples of ninety degree turns
+in every direction. This restricted space of changes is represented by
+a regular polytope in the four sphere. In this setting it is still
+possible to talk about "the smallest possible rotation" and show how
+all other rotations are generated by these smallest rotations. In this
+way, the ideas that underly the derivative and exponential map could
+be introduced in a simple and concrete setting, and generalized to the
+continuous case later. For instance, if we show how a Logo-style
+turtle could generate a path around a tetrahedron by making one-third
+turns each time it steps over the edge, it isn't that hard to continue
+our story by suggesting to kids that if the tetrahedron is smoothed
+out into a cone, the turtle could learn to walk on it by making many
+more steps with a much tinier uniform turn at each step. In this way
+it might be possible to introduce the concept of derivative and
+exponential map in a way that proceeded gently from the concrete to
+the abstract, and left a child the possibility to bail out into a
+concrete world again any time that the abstractions got overwhelming
+</p><p>
+One of the reasons I believe so emphatically that the right way to
+simplify the story of calculus is to restrict to discrete rotations,
+rather than restrict to one dimension, is that this discrete story is
+not just a toy for children! Discrete differential geometry is a
+flourishing subject (see http://ddg.cs.columbia.edu/ for example):
+understanding this subject well enough can get one a job right now at
+Disney or Pixar programming simulations for computer
+graphics. (However --- truth in advertising --- it is a new subject,
+so some aspects of it are still research problems; it isn't completely
+clear what's the best way to discretize to give the models the desired
+properties.) Perhaps you can understand that it makes sense that
+people in the real world care about discrete approximations to our
+continuous story, because, as I mentioned before, it is a fiction that
+an airplane makes a constant smooth infinitesimal correction to stay
+on course. In reality the pilot makes periodic adjustments
+intermittently. The interaction between the fictional world of
+continuous infinitesimal adjustment and the actual world where those
+adjustments are finite and discontinuous is a burning problem that
+occupies the minds and careers of many adults in the real world.
+<p></p>
+So it is quite fair to introduce kids to these concepts early: even if
+the ideas are introduced as a "toy," it is the kind of toy that can be
+justified to teenagers as also much more than a toy. I think it is
+disrespectful to eighteen year olds to hold them for years in a
+classroom calculating the trajectories of go-carts and thrown balls,
+because these truly are toy problems that almost no one in the real
+world thinks about much. But it is not disrespectful to give them
+"toy" discretizations of three dimensional problems, because without
+too much extra work a restless teenager can transform an understanding
+of such "toys" into knowledge that can land him a real job and a real
+adult life.
+</p><p>
+I have suggested to various teachers that images of the hypersphere be
+incorporated into the teaching of calculus and physics in the way I
+suggest, but I have encountered the objection that it is too strange a
+space, too hard to wrap one's head around, to be suitable for the
+classroom. I agree, it is somewhat hard to learn to visualize
+something projected from four dimensions, and hard to get used to the
+curvature of the space. I submit, however, that this difficulty is the
+inherent, rather than gratuitous, complexity of the subject of
+calculus and differential geometry. The space in which "changes of
+changes" live IS higher dimensional, and it IS curved, and that makes it
+hard to think about. However, you cannot avoid wrapping your mind
+around this problem and still claim to really understand the subject.
+If you try to simplify away these difficulties you are simplifying
+away the essence of the subject, and you inevitably pay for it when
+you try to make your way into the advanced material and get beaten
+back by a blizzard of incomprehensible partial derivatives.
+<p></p>
+To wrap up this essay 
+I want to quickly sketch a vision of a mobile app with accompanying
+physical toy that could be used, as I have suggested, to introduce
+polytopes in the hypersphere and their connection to the fundamental
+ideas of differential geometry. They key thing I would want the mobile
+app to accomplish is to make clear the connection between the points
+of the hypersphere and the rotations they represent in real space, and
+show how those choices can be used to control trajectories. For
+instance, using the regular polytope that represents all the rotations
+that are multiples of ninety degrees, one could imagine controlling a
+logo-style turtle restricted to a surface made of stacks of cubes. By
+picking faces of the 4D polytope a kid could turn the turtle to make
+it walk on the surface. One could also set the turtle on a programmed
+trajectory --- say, walking around a cube --- and show in the 4D
+polytope how this corresponded to a uniform motion (the turtle makes
+the same change at each step). Then you could introduce the idea of
+acceleration --- a change to a change --- that alters this programmed
+trajectory in the way you would expect if a force had kicked the
+turtle off its path, and show how this corresponds to a change in the
+choice of 4D point. There are more game ideas along these lines; this
+is just a sketch of the kind of thing that might be both fun and
+educational. It could also be built at two levels, a "child's level"
+where the emphasis is to make a fun toy, and a "teenager's level"
+where the toy could be re-explained as a route into an understanding 
+of adult problems.
+<p></p>
+If I had the chance to make a companion physical toy, I would want one
+that emphasized the structures that are mathematically important. As I
+mentioned, there is an important idea of a "smallest rotation of a
+given type" that generates a family of rotations. The whole object
+then is divided into internal structure generated by these
+families. These internal structures are a nice way to pave the way to
+the continuous ideas of tangent space (Lie algebra). In addition, as I
+mentioned earlier, the exponential map works because of the uniformity
+of the space. There is more to say about the flavors of these internal
+structures, but the short story is that it would be nice to have a
+physical toy that could be taken apart and put back together in a way
+that emphasized both the structure and the uniformity of the space. In
+this way, a thing that was a fun toy to a ten year old could be
+explained again to a teenager as a thing that was much more than a
+toy.
+</p>
+	      </div>
+              
+        </div>
+     </article>
+
+     <div id="designline">
+        <h5 class="postDate">
+           <abbr> <a href="mailto:rfrankel@mit.edu">Rebecca Frankel</a>
+           </abbr>
+        </h5>
+     </div>
+
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+     Theme: inspired by The Eames (http://theeamestheme.tumblr.com/)
+     Design & Production: The Minimalist (http://minimalist.co)
+     with assistance by BT (http://bensontrade.nl)
+     Radically modified by Rebecca Frankel
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <link href='http://fonts.googleapis.com/css?family=Gentium+Basic:700,400italic' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+	
+     <title>Calculus, the End of the Road</title>	
+     <meta name="description" content="Description" />
+     <link rel="shortcut icon" href="http://assets.tumblr.com/images/default_avatar_16.gif" />
+     <link rel="alternate" type="application/rss+xml" title="Untitled" href="http://demo.tumblr.com/rss" />
+
+<!-- Styles -->
+
+<style type="text/css">
+/*----- RESET -------*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+
+/*----- GENERAL -----*/
+
+     header, footer, section, article, nav, aside {
+        display: block;
+     }
+
+     body {
+        background: #fff url(greenishbg.jpg) repeat 0 0;
+        color: darkgreen;
+        font: 'Gentium Book Basic', 16px/20px Georgia, "Times New Roman", Times, serif;
+        padding-top: 35px;
+        text-align: center;
+        width:580px;
+        margin: 0 auto;
+        font-size:100%;
+        line-height:1.25em;
+
+     }
+
+     h1, h2, h3, hQ {
+        font-family:'Gentium Basic', Georgia, "Times New Roman", Times, serif;
+     }
+
+     h1 {
+        font: 'Gentium Basic';
+        font-size: 60px;
+        letter-spacing: -2px;
+        line-height: 50px;
+     }
+
+     h2 {
+        margin-top: 1px;
+        font-size: 35px;
+        line-height: 28px; 
+        letter-spacing: -1px;
+     }
+
+     h3 {
+        font-size: 21px;
+        line-height: 27px; 
+     }
+
+     a:link, a:visited {
+        color: green;
+        font-weight: normal;
+        text-decoration: none;
+     }
+     
+     a:hover, a:active {
+        text-decoration: underline;
+     }
+
+     hr{
+        border:0 #ccc solid;
+        border-top-width:1px;
+        clear:both;
+        height:0;
+     }
+
+     ol{list-style:decimal}
+
+     ul{list-style:disc}
+
+     li{margin-left:30px}
+
+     p,dl,hr,h1,h2,h3,h4,h5,ol,ul,pre,table,address,fieldset{margin-bottom:15px}
+
+     #main {
+        padding: 0;
+     }
+
+     #mainDesc {
+        padding-top: 10px;
+     }
+
+/*----- MASTHEAD -----*/
+
+     .noMeta > div {
+        padding: 0px;
+     }
+
+     #masthead {
+        margin: 0 0 0 0;
+     }
+
+     #masthead h1 {
+        margin-bottom: 0;
+     }
+
+     #masthead h1 a:link, #masthead h1 a:visited {
+        text-transform: none;
+        color: green;
+        text-decoration: none;
+     }
+
+     #masthead h1 a:active {
+        outline: 0;
+     }
+
+     #masthead p {
+        font-family: Georgia, serif;
+        font-size: 20px;
+        color: darkgreen;
+        margin-bottom: 0;
+     }
+
+     #masthead a:link, #masthead a:visited {
+        color: green;
+     }
+
+     #siteDescription{
+        font-size: 13px;
+        color: darkgreen;
+        /*max-width: 320px;*/
+        /*text-transform: Uppercase;*/
+        /* color of border was #ccc */
+        border-top: 2px solid green;
+        /*border-bottom: 2px solid green;*/
+        margin-top: 0px;
+        padding: 18px 0 18px 0;
+        font-family: "Times New Roman", Times, serif;
+     }
+
+/*----- ARTICLE META INFO -----*/
+
+     #designline {
+        margin-top: 36px;
+     }
+
+     h5{
+        position: relative;
+        top: -37px;
+        padding: 0 0 1px 0;
+        margin: 0 0 0 0;
+        font-family: Georgia, serif;
+        font-size: 10px;
+        color: darkgreen;
+        text-decoration: none;
+        font-weight: normal;
+        border-top: 1px dashed #ccc;
+     }
+
+     h5 a:link, .line a:visited{
+        font-family: Georgia, serif;
+        font-size: 10px;
+        color: darkgreen;
+        text-decoration: none;
+        font-weight: normal;
+     }
+
+     h5 a:hover{
+        text-decoration: underline;
+     }
+
+     h5 abbr{
+        display: inline-block;
+        position: relative;
+        margin: 0 auto;
+        padding: 0 28px;
+        top: 18px;
+     }
+
+     h5.postDate a{
+        color: darkgreen;
+     }
+
+/*------------ numbers --------*/
+
+.number { 
+float: left; 
+color: darkgreen; 
+font-size: 36px; 
+line-height: 30px; 
+padding-top: 4px; 
+padding-right: 8px; 
+padding-left: 3px; 
+font-family: 'Gentium Basic', Georgia; 
+}
+
+
+/*----- ARTICLE -----*/
+
+     article {
+        padding-bottom: 8px;
+        text-align: left;
+        position: relative;
+        margin-top: -8px;
+      }
+
+     article img {
+        border: none;
+        max-width: 500px;
+        display: block;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     articleBody p img {
+        border: none;
+        display: block !important;
+        margin-bottom: 15px !important;
+        max-width: 500px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+     }
+
+     article > div {
+        padding: 0 0 1px;
+        overflow: hidden;
+     }
+     article .searchPage {
+        border-top: 1px dashed #ccc;
+        padding-top: 29px;
+        margin: 6px 0 0 0;
+     }
+
+     .searchPageText {
+        margin: 0 0 25px 0;
+     }
+
+     article .meta a:link, article .meta a:visited {
+        text-decoration: none;
+     }
+
+     article .meta a:hover, article .meta a:active {
+        text-decoration: underline;
+     }
+
+     article h2 {
+        text-align: center;
+        color: #222222;
+     }
+
+     article h2 a:link, article h2 a:visited {
+        color: #222;
+        text-decoration: none;
+     }
+
+     article h2 a:hover, article h2 a:active {
+        text-decoration: none;
+        border-bottom: 1px solid #222;
+     }
+
+     blockquote {
+        border-left: 1px solid #ddd;
+        margin-left: 20px;
+        padding-left: 1em;
+     }
+
+     #quoteSource{
+        margin-top: -5px;
+        margin-left: auto;
+        margin-left: right;
+        text-align: center;
+     }
+
+     #quoteText h2 {
+        text-align: center;
+         color: #222222;
+     }
+
+     article .chat {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 15px;
+     }
+
+     article .chat li {
+        margin: 0 0 2px;
+        padding: 2px 0 2px 0;
+     }
+
+     .chatname {
+        font: 12px/12px "Times New Roman", Times, serif;
+        text-transform: Uppercase;
+        font-weight: normal;
+     }
+
+     .photoCaption {
+        text-align: right;
+        /*width: 320px;*/
+        margin: 0 auto;
+     }
+
+     .photoCaption blockquote {
+        text-align: left;
+        border-left: 1px solid #ddd;
+        margin-left: 0px;
+        padding-left: 18px;
+     }
+
+
+
+
+ 
+</style>
+
+<!-- Scripts -->
+
+<!--[if IE]>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+
+<meta http-equiv="x-dns-prefetch-control" content="off"/></head>
+
+<body>
+     <header id="masthead" class="clearfix">
+        <div id="thehead">       
+           <div id="navMasthead">
+              <h1><a href="#" title="/">Calculus</a></h1>
+              <h3> the end of the road. <h3>
+           </div>
+        </div>
+     </header>
+
+     <section id="mainDesc" class="clearfix">
+        
+           <div id="siteDescription">PART ONE <br>(continued in <a href="calcessaytwo.html">PART TWO</a>)</div>
+         
+     </section>
+
+     <div id="designline">
+        <h5 class="postDate">
+           <abbr>
+           </abbr>
+        </h5>
+     </div>
+
+
+     <section id="main" class="clearfix">
+     <div class="layout">           
+     
+      
+           
+
+
+
+     <article>
+        <div>
+           
+          
+           
+          
+           
+          
+           
+<!---              <div id="quoteText"> 
+     <div id="designline">
+ <h5 class="postDate">Calculus is the last math class children take or the first math class they don't take.</h5>
+     </div> 
+             
+
+        </div>
+     </article>
+
+     <article>
+        <div>
+           
+          
+           
+              <a href="#" title="http://www.giftsforageek.com/product/calculus_cap_150146484"><img src="calculus_cap.png" alt="Calculus cap by &nbsp;Gifts for a Geek" /></a>
+    
+ <div id="designline">
+        <h5 class="postDate">
+           <abbr>
+Calculus Cap by <a href="#" title="http://www.giftsforageek.com/">Gifts for a Geek</a>
+           </abbr>
+        </h5>
+     </div>
+
+              <div class="photoCaption"><p>
+           
+      
+        </div> --->
+     </article>
+
+
+     <article>
+        <div>
+           
+               
+              
+              <div><p>
+<span class="number">Calculus</span> is the hurdle that kills many kids' interest in math. It is
+the end of the road --- either the last math class children take or
+the first math class they don't take. In a world where mathematical
+literacy is an increasingly important gateway to high-skilled, high
+paying jobs, this could be seen as something of a disaster. Or an
+opportunity: if this gateway could be made less daunting, it could
+transform both the personal and perhaps also the communal
+self-confidence of applicants to this increasingly technical world.</p>
+<p>
+Why exactly is calculus so daunting? It is partly because the subject
+is inherently harder than anything kids encounter earlier in their
+mathematical career ---  I will discuss exactly what is inherently
+difficult about the subject in detail later in this essay. But not all
+the obstacles are inherent; some seem gratuitous. In particular: 
+</p>
+<p>
+<span class="number">1st:</span> It is the first subject where the essential concepts are
+introduced entirely abstractly. Earlier math subjects, if taught well,
+introduce concepts first with concrete instantiations and then only
+later with abstractions. If a kid fails to grasp an abstraction,
+they can fall back to concrete manipulations. I played with counting
+blocks before I learned to add; I arranged blocks in rectangles before I
+learned multiplication; I experimented with dividing pizzas and cakes
+before I learned fractions; I did word problems before solving
+equations with unknowns; I might even have played with linear
+transforms before learning matrix multiplication (actually I didn't,
+but I could have if my linear algebra teacher had been better.) But
+where is the concrete thing I can play with before I dive into the
+abstractions of calculus, and what concrete world can I bail out into
+if I find the abstraction overwhelming? 
+</p>
+<p>
+<span class="number">2nd:</span> Not only is calculus abstract, but the abstractions are loaded
+with historical baggage. Why do we teach kids both "x-dot,
+x-double-dot" and also "dy/dx" at the same time? Isn't it confusing to
+have two competing notations? Yes, it sure is, but Newton and Leibniz
+were bitter rivals and couldn't agree to use the same notation, and
+somehow, centuries later, we are still suffering from the consequences
+of their rivalry --- and also inflicting it on our kids.
+</p>
+<p>
+<span class="number">3rd:</span> Not only are we suffering from historical baggage in the notation
+of calculus, we may also be suffering from historical baggage in its
+conception. In particular, the main motivating examples in
+introductory calculus books are essentially one dimensional: the speed
+of a car on a track, the flight of a projectile, the orbit of a
+planet. These were the problems that motivated Newton and Leibniz,
+because they were the new frontier in the seventeenth century, but
+they aren't the frontier now. Motivating the subject with one
+dimensional examples is not ideal. As I will explain in detail later,
+in one dimension it is possible to oversimplify in a way that may seem
+to make the subject easier, but carries a huge price: it confuses the
+overall narrative. It isn't fair to kids who are complaining that the
+subject doesn't make sense if, in fact, the story you are telling them
+actually doesn't make sense. (More about this later!)
+</p>
+<p>
+<span class="number">4th:</span> Calculus is taught at an uncomfortable age. It is usually the
+last course in high school or the first in college, so the people
+learning it are seventeen or eighteen --- and it is counter to
+children's natural psychology to still be sitting in a classroom doing
+purely preparatory work at this age. In olden days, kids became adults
+at age thirteen. Before thirteen or so, kids are reasonably happy to
+study just to please adults, and sometimes just for the fun of
+learning itself. But as teenagers they acquire a longing to
+participate in the adult world, and become impatient with tasks that
+shut them out of that world for reasons they do not understand.
+</p>
+<p>
+The modern world battles this natural transformation, and attempts to
+prolong childhood for four to six more uncomfortable years in order to
+pour into children's heads the ideas that are too abstract to teach in
+elementary school but too general and foundational to motivate with an
+honest story about their usefulness in adult life. But I think this is
+disrespectful and unfair. I would like to see the subject reimagined
+in a way that makes it possible to split it into two age-appropriate
+phases: a "child's phase" that can be introduced to a child younger
+than twelve, as a toy or a game that would be amusing to children, and
+an "adult's phase" that builds on the ideas introduced in the "child's
+phase" but motivates the extra abstraction and difficulty with an
+honest narrative about how overcoming these difficulties will empower
+the teenager in adult life. So I agree with you about wanting to make
+a toy --- I want to make a toy to give a ten year old, but I also want
+to have a plan to say to them when they turn fifteen "you know that
+old toy you played with five years ago? Well, there was more to it
+than I told you at the time. Now that you are older, I can explain
+what I was trying to tell you with it. You should care to listen to
+me, because if you work to really understand this, you will gain
+skills which will buy you money and respect in the adult world."
+</p>
+<p>
+In other words, I am envisioning a strategy of teaching that works
+with rather than against children's developmental urges. Young kids
+want to play with toys. So give them toys! and let them play without
+pressure. Older kids want to throw away their toys and move into the
+adult world. If you try to stop them, they will ask "what good does
+this do for me? It's a toy and I want to be done with toys." Be ready
+with an answer, and not just any old answer, but an honest and
+complete answer. If you can do that, I think you could also get them
+to learn without pressure, because the pressure would come from inside
+them, from inside their own will to become an adult.
+</p>
+<p>
+So... back to the question of calculus. I've explained why I think
+calculus is often made gratuitously difficult, but I also think it is
+to some degree inherently difficult. The question is "why?" and also
+"how could that inherent difficulty be embodied in a toy that small
+kids would have fun wrapping their minds around, and teenagers could
+understand as a route into adult life?"</p></div>
+              
+        </div>
+     </article>
+
+     <div id="designline">
+        <h5 class="postDate">
+           <abbr> <a href="mailto:rfrankel@mit.edu">Rebecca Frankel</a>
+           </abbr>
+        </h5>
+     </div>
+
+    
+    
+
+</body>
+</html>
